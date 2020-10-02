@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>The Call List</title>
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="This is an example of a meta description.">
+<meta name="keywords" content="Starter, developers, technology">
+<link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="styles/main.min.css">
+
+</head>
+<body>
+<div id="header">
+  <div class="container">
+
+    <div class="content">
+      <a href="#"class="link menu-button">
+        <i class="icon icon-burger"></i>
+      </a>
+
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Call List" class="logo-icon">
+        </a>
+      </h1>
+
+      <nav class="navigation">
+        <ul class="links">
+          <li>
+            <a href="#">How it works</a>
+          </li>
+          <li>
+            <a href="#">Get inspired</a>
+          </li>
+          <li>
+            <a href="#">Who We are</a>
+          </li>
+          <li class="login-link">
+            <a href="#" class="link link-secondary">Login</a>
+          </li>
+          <li class="demo-link">
+            <a href="#" class="link link-primary">Request A Demo</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="btn user-button">
+        <i class="icon icon-person"></i>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<div class="sidemenu-wrapper" id="nav-sidemenu">
+  <div class="sidemenu sidemenu-left">
+    <header>
+      <div class="logo-wrapper">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Call List" class="logo-icon">
+          </a>
+        </h1>
+      </div>
+      <button class="btn close-button" type="button">
+        <i class="icon icon-close"></i>
+      </button>
+    </header>
+
+    <div class="content">
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html">How it works</a>
+          </li>
+          <li>
+            <a href="#">Get inspired</a>
+          </li>
+          <li>
+            <a href="#">Who We are</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <div
+    class="sidemenu-overlay">
+  </div>
+</div>
+
+<div class="sidemenu-wrapper" id="user-sidemenu">
+  <div class="sidemenu sidemenu-right">
+    <header>
+      <div class="logo-wrapper">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Call List" class="logo-icon">
+          </a>
+        </h1>
+      </div>
+      <button class="btn close-button" type="button">
+        <i class="icon icon-close"></i>
+      </button>
+    </header>
+
+    <div class="content">
+      <nav class="menu">
+        <ul>
+          <li class="nav-button">
+            <a href="#" class="link link-secondary">Login</a>
+          </li>
+          <li class="nav-button">
+            <a href="#" class="link link-primary">Request A Demo</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <div
+    class="sidemenu-overlay">
+  </div>
+</div>
+
+
+
+<div class="pricing-page">
+  <div class="breadcrumbs-block">
+  <div class="container">
+    <ul class="breadcrumb-navigation">
+      <li>
+        <a href="index.html">Home</a>
+        <i class="icon icon-arrow-right"></i>
+      </li>
+      <li>
+        <a href="#">How it works</a>
+        <i class="icon icon-arrow-right"></i>
+      </li>
+      <li class="current-page">
+        <a href="#">Pricing</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <div class="section-title-wrapper">
+  <div class="container">
+    <h2 class="section-title">
+      The Call List™ plug-in is free to install.
+    </h2>
+    <h3 class="section-subtitle">
+      Brands pay for platform usage and decide whether to monetize TCL powered events or offer users free, exclusive
+      access to premium content.
+    </h3>
+  </div>
+</div>
+
+  <div class="event-settings-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="event-settings">
+
+          <ul>
+            <li>
+              <div class="form-group range-setting">
+                <label for="audienceSize">Audience Size (individual attendees):</label>
+                <input type="range" class="form-control-range" id="audienceSize" min="0" max="1000" value="100">
+              </div>
+              <input type="text" class="form-control count-value" placeholder="Size" value="100" min="0" max="1000"
+                     id="audienceSizeCount">
+            </li>
+            <li>
+              <div class="form-group range-setting">
+                <label for="eventLength">Event Length (minutes):</label>
+                <input type="range" class="form-control-range" id="eventLength" step="10" min="0" max="120" value="10">
+              </div>
+              <input type="text" class="form-control count-value" placeholder="Size" step="10" value="10" min="0" max="120"
+                     id="eventLengthCount">
+            </li>
+            <li>
+              <div class="form-group number-settings">
+                <label for="eventsPerMonth">
+                  How Many Events Are You Hosting Per Month?:
+                </label>
+                <input type="number" class="form-control" min="0" max="1000" value="1" id="eventsPerMonth">
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="pricing-card">
+          <div class="cart-header">
+
+            <h2 class="pricing-title">
+              MONTHLY pricing summary
+            </h2>
+            <strong class="price">
+              $ <span id="priceResult">123</span>
+            </strong>
+          </div>
+          <ul class="price-details-list">
+            <li>
+              <h3 class="details-text">
+                Audience Size (individual attendees)
+              </h3>
+              <span class="list-item-count" id="audienceSizeResult">100</span>
+            </li>
+            <li>
+              <h3 class="details-text">
+                Event Length (minutes)
+              </h3>
+              <span class="list-item-count" id="eventLengthResult">10</span>
+            </li>
+            <li>
+              <h3 class="details-text">
+                How Many Events Are You Hosting Per Month?
+              </h3>
+              <span class="list-item-count" id="eventsPerMonthResult">1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="includes-section">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">
+        What’s included
+      </h2>
+    </div>
+    <div class="section-content">
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="includes-list">
+            <li>
+              brandable
+            </li>
+            <li>
+              2-way conversation
+            </li>
+            <li>
+              surveys
+            </li>
+            <li>
+              save products to cart
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="includes-list">
+            <li>
+              host sees virtual audience
+            </li>
+            <li>
+              digital hand-raising
+            </li>
+            <li>
+              single tap calendar sync
+            </li>
+            <li>
+              breakouts/private watch groups
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="includes-list">
+            <li>
+              create free or VIP events
+            </li>
+            <li>
+              no-brainer payment integrations
+            </li>
+            <li>
+              enable Shopify
+            </li>
+            <li>
+              support
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-actions">
+        <a href="#" class="link link-primary">
+          Request A Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="customers-slider-section">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">
+        They trust us
+      </h2>
+    </div>
+
+    <div class="customers-slider-wrapper">
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="customer-card">
+              <div class="customer-image">
+                <img src="images/tiana.jpg" alt="Tiana Bell">
+              </div>
+
+              <div class="custom-info">
+                <h3 class="customer-name">
+                  Tiana Bell
+                </h3>
+                <h4 class="customer-position">
+                  Co-founder Belle Bar Organic
+                </h4>
+                <div class="review-text">
+                  “ The onboarding takes 5 mins. It’s really fast! Now I can set events up really really quickly, which
+                  is
+                  a
+                  win! As a founder I am so busy, and software that takes a lot of time to learn just doesn’t work for
+                  me.
+                  The
+                  fact that the onboarding is so fast means I can use TCL longterm and often.”
+                </div>
+                <div class="study-info">
+                  <div class="study-partner">
+                    <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+                  </div>
+                  <a href="#" class="study-link">Belle Bar Organic case study</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper-arrow-left">
+        <i class="icon icon-arrow-left"></i>
+      </div>
+
+      <div class="swiper-arrow-right">
+        <i class="icon icon-arrow-right"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="partners-section">
+  <div class="container">
+    <ul class="partners-list">
+      <li>
+        <img src="svg/partners/belle-bar.svg" alt="Belle Bar">
+      </li>
+      <li>
+        <img src="svg/partners/mac.svg" alt="MAC">
+      </li>
+      <li>
+        <img src="svg/partners/armani.svg" alt="Armani">
+      </li>
+      <li>
+        <img src="svg/partners/realsimple.svg" alt="Realsimple">
+      </li>
+      <li>
+        <img src="svg/partners/theexperiential.svg" alt="The Experiential">
+      </li>
+      <li>
+        <img src="svg/partners/medspouse.svg" alt="Medspouse">
+      </li>
+      <li>
+        <img src="svg/partners/ww.svg" alt="WW">
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <div class="faq-section">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">
+        Some Frequently Asked Questions
+      </h2>
+    </div>
+    <div class="faq-list">
+      <ul class="accordion">
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            What payment methods do you accept?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            What happens after my free trial ends?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Can I pay quarterly?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            How can I engage my customers with social selling?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Can we do away with signin/up
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Will my data be private and safe?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Do you charge sales or consumpion taxes?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Is it just a one off payment or monthly subscription is required?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Should I download any app?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            How to market events?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            Is there any support?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+
+        <li class="accordion-block">
+          <h4 class="accordion-title">
+            How to onboard?
+            <i class="icon icon-chevron-down"></i>
+          </h4>
+          <div class="accordion-content">
+            text
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="explore-section">
+  <div class="container">
+    <div class="section-title-wrapper">
+      <h2 class="section-title">
+        Have more questions?
+      </h2>
+    </div>
+    <ul class="row explore-list">
+      <li class="col-md-6 col-lg-4">
+        <div class="explore-card">
+          <div class="card-image">
+            <img src="svg/explore-1.svg" alt="Demo">
+          </div>
+          <a href="#" class="link link-primary">
+            Reguest a demo
+          </a>
+        </div>
+      </li>
+      <li class="col-md-6 col-lg-4">
+        <div class="explore-card">
+          <div class="card-image">
+            <img src="svg/explore-2.svg" alt="Studies">
+          </div>
+          <a href="#" class="link link-primary">
+            View case studies
+          </a>
+        </div>
+      </li>
+      <li class="col-md-6 col-lg-4">
+        <div class="explore-card">
+          <div class="card-image">
+            <img src="svg/explore-3.svg" alt="Try Free">
+          </div>
+          <a href="#" class="link link-primary">
+            Try for free
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div class="partners-section">
+  <div class="container">
+    <ul class="partners-list">
+      <li>
+        <img src="images/press/forbes.png" alt="Forbes">
+      </li>
+      <li>
+        <img src="images/press/adweek.png" alt="adweek">
+      </li>
+      <li>
+        <img src="images/press/glossy.png" alt="glossy">
+      </li>
+      <li>
+        <img src="images/press/cnbc.png" alt="cnbc">
+      </li>
+      <li>
+        <img src="images/press/sourcing.png" alt="sourcing">
+      </li>
+      <li>
+        <img src="images/press/WWD.png" alt="WWD">
+      </li>
+      <li>
+        <img src="images/press/pnp.jpg" alt="pnp">
+      </li>
+      <li>
+        <img src="images/press/NYFTL.png" alt="NYFTL">
+      </li>
+      <li>
+        <img src="images/press/Havas_Media.png" alt="Havas Media">
+      </li>
+      <li>
+        <img src="images/press/nyc media lab.png" alt="nyc media lab">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container">
+
+    <div class="content">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Call List" class="logo-icon">
+        </a>
+      </h1>
+
+      <div class="footer-actions actions-mobile">
+        <a href="#" class="link link-primary">
+          Try Now!First hour for free
+        </a>
+      </div>
+
+      <ul class="footer-links">
+        <li class="links-group">
+          <h2 class="links-title">HOW IT WORKS</h2>
+          <ul>
+            <li>
+              <a href="#">
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="pricing.html">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Tutorials
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Industries
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="links-group">
+          <h2 class="links-title">GET INSPIRED</h2>
+          <ul>
+            <li>
+              <a href="#">
+                Case studies
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Events
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="links-group">
+          <h2 class="links-title">WHO WE ARE</h2>
+          <ul>
+            <li>
+              <a href="#">
+                About us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Our mission
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Support
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-actions actions-desktop">
+        <a href="#" class="link link-primary">
+          Try Now!First hour for free
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <h2 class="copyright-title">
+        Copyright 2020 The Call List. All rights reserved.
+      </h2>
+      <ul class="copyright-links">
+        <li>
+          <a href="#">Terms of use</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script type='text/javascript' src="js/main.min.js"></script>
+
+
+</body>
+</html>
