@@ -176,12 +176,29 @@
   </div>
 </div>
 
-  <div class="event-settings-section">
+  <div class="pricing-calculator">
   <div class="container">
+
+    <ul class="nav nav-tabs" id="calculatorTabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active"
+           id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events"
+           aria-selected="true">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"
+           id="party-room-tab" data-toggle="tab" href="#partyRoom" role="tab" aria-controls="party-room"
+           aria-selected="false">Party Room</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="calculatorTabsContent">
+      <div class="tab-pane fade show active" id="events" role="tabpanel" aria-labelledby="events-tab">
+        <div class="event-settings-section">
+  <div class="container">
+
     <div class="row">
       <div class="col-md-6">
         <div class="event-settings">
-
           <ul>
             <li>
               <div class="form-group range-setting">
@@ -196,7 +213,8 @@
                 <label for="eventLength">Event Length (minutes):</label>
                 <input type="range" class="form-control-range" id="eventLength" step="10" min="0" max="120" value="10">
               </div>
-              <input type="text" class="form-control count-value" placeholder="Size" step="10" value="10" min="0" max="120"
+              <input type="text" class="form-control count-value" placeholder="Size" step="10" value="10" min="0"
+                     max="120"
                      id="eventLengthCount">
             </li>
             <li>
@@ -243,6 +261,16 @@
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <p class="settings-description">For events above 1000 participants, please get in touch.</p>
+  </div>
+</div>
+
+      </div>
+      <div class="tab-pane fade" id="partyRoom" role="tabpanel" aria-labelledby="party-room-tab">
+
       </div>
     </div>
   </div>
