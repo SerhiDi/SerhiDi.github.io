@@ -193,7 +193,8 @@
     </ul>
     <div class="tab-content" id="calculatorTabsContent">
       <div class="tab-pane fade show active" id="events" role="tabpanel" aria-labelledby="events-tab">
-        <div class="event-settings-section">
+        <div id="eventsSettings">
+          <div class="event-settings-section">
   <div class="container">
 
     <div class="row">
@@ -268,9 +269,86 @@
   </div>
 </div>
 
+        </div>
       </div>
       <div class="tab-pane fade" id="partyRoom" role="tabpanel" aria-labelledby="party-room-tab">
+        <div id="partyRoomSettings">
+          <div class="event-settings-section">
+  <div class="container">
 
+    <div class="row">
+      <div class="col-md-6">
+        <div class="event-settings">
+          <ul>
+            <li>
+              <div class="form-group range-setting">
+                <label for="audienceSize">Audience Size (individual attendees):</label>
+                <input type="range" class="form-control-range" id="audienceSize" min="0" max="1000" value="100">
+              </div>
+              <input type="text" class="form-control count-value" placeholder="Size" value="100" min="0" max="1000"
+                     id="audienceSizeCount">
+            </li>
+            <li>
+              <div class="form-group range-setting">
+                <label for="eventLength">Event Length (minutes):</label>
+                <input type="range" class="form-control-range" id="eventLength" step="10" min="0" max="120" value="10">
+              </div>
+              <input type="text" class="form-control count-value" placeholder="Size" step="10" value="10" min="0"
+                     max="120"
+                     id="eventLengthCount">
+            </li>
+            <li>
+              <div class="form-group number-settings">
+                <label for="eventsPerMonth">
+                  How Many Events Are You Hosting Per Month?:
+                </label>
+                <input type="number" class="form-control" min="0" max="1000" value="1" id="eventsPerMonth">
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="pricing-card">
+          <div class="cart-header">
+
+            <h2 class="pricing-title">
+              MONTHLY pricing summary
+            </h2>
+            <strong class="price">
+              $ <span id="priceResult">123</span>
+            </strong>
+          </div>
+          <ul class="price-details-list">
+            <li>
+              <h3 class="details-text">
+                Audience Size (individual attendees)
+              </h3>
+              <span class="list-item-count" id="audienceSizeResult">100</span>
+            </li>
+            <li>
+              <h3 class="details-text">
+                Event Length (minutes)
+              </h3>
+              <span class="list-item-count" id="eventLengthResult">10</span>
+            </li>
+            <li>
+              <h3 class="details-text">
+                How Many Events Are You Hosting Per Month?
+              </h3>
+              <span class="list-item-count" id="eventsPerMonthResult">1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="settings-description">For events above 1000 participants, please get in touch.</p>
+  </div>
+</div>
+
+        </div>
       </div>
     </div>
   </div>
